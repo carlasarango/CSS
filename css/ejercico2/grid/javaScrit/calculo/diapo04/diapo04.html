@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Análisis y deiseño</title>
+	<link rel="stylesheet" type="text/css" href="stylo.css">
+	<script>
+
+		function calcular(){
+			var precio= parseFloat(document.getElementById('precio').value);
+			var iva= parseFloat(document.getElementById('iva').value);
+			precio*=iva;
+			document.getElementById('resultado').innerHTML=precio.toFixed(2);
+		}
+
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Calculadora de Iva</h1>
+		<h2>Espe's Bussines S.L.</h2>
+	</header>
+	<main>
+		<span>precio</span><input type="number" min="0" id="precio"><br>
+
+		<span>IVA</span>
+		<select id="iva">
+			<option value="1.21">Normal(21%)</option>
+			<option value="1.1">Reducido(10%)</option>
+			<option value="1.04">Super reducido(4%)</option>
+		</select>
+
+
+		<button onclick="calcular();">Calcular</button><br>
+		<span>El precio final es:</span><output id="resultado"></output>
+	</main>
+
+
+		
+
+</body>
+</html>

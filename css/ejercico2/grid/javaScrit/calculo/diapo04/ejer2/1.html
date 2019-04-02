@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO2</title>
+	<style >
+		span{
+			font-size: 2vw;
+			margin: 5vw;
+		}
+		label{
+			margin:5vw;
+		}
+
+
+
+
+
+
+	</style>
+	<script>
+		function calcular(){
+			var primero= parseFloat(document.getElementById('una').value);
+
+			var segundo= parseFloat(document.getElementById('dos').value);
+			var tercero= parseFloat(document.getElementById('tres').value);
+			var calculo= (primero+segundo+tercero)/3;
+			if (calculo>=5) {
+
+				document.getElementById('resultado').innerHTML='APROBADO';
+			}else{
+
+				document.getElementById('resultado').innerHTML='SUSPENSO';
+			}
+			
+		}	
+	</script>
+
+</head>
+<body>
+	<h1>NOTAS FINAL CURSO</h1>
+	<span >EXAMENES TRIMESTRALES</span><br>
+	<label>Primer examen</label>
+	<input type="number" id="una" min="1" max="10"><br>
+	<label>Segundo examen </label>
+	<input type="number" id="dos" min="1" max="10"><br>
+	<label>Tercer examen </label>
+	<input type="number" id="tres" min="1" max="10"><br>
+	<button onclick="calcular();">NOTA MEDIA</button>
+	<span>Es:</span><output id ="resultado"></output>
+
+
+</body>
+</html>
+
+
+
+

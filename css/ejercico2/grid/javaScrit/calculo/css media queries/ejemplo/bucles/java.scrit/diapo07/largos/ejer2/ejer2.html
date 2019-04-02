@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJER2</title>
+	<script>
+		function ampliar(foto){
+			foto.height*=2;
+			foto.width*=2;
+		}
+		function reducir(foto){
+			foto.height*=0.5;
+			foto.width*=0.5;
+		}
+	</script>
+	<style >
+	#imagen{
+
+		border: solid 2px;
+		width: 40vw;
+		background: url(barco.gif) no-repeat;
+		background-size: 100% 100%;
+
+	}
+	#jack{
+		padding: 5vw;
+	}
+	
+
+
+	</style>
+</head>
+<body>
+<h1>Realiza la función escalar  para agrandar o encoger las imagenes</h1>
+<figure id="imagen">
+	<img src="jack2.png" id="jack" height="200" width="200">
+</figure>
+<button onclick="ampliar(jack);">AMPLIAR</button>
+<button onclick="reducir(jack);">REDUCIR</button>
+</body>
+</html>

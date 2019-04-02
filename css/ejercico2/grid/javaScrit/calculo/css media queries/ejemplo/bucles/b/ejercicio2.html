@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EJERCICIO2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>Imprementa los números pares de 0 a 100</h1>
+<script >
+	for (let i=0; i<=100; i++){
+		if (i%2==0){
+			document.write('<div>'+i+'</div>');
+		}
+	}
+</script>
+
+<label>PROBANDO CON WHILE</label>
+<script>
+	var i=2;
+	while(i<=100){
+		document.write(i+',');
+		i+=2;
+	}
+</script>
+<hr>
+<h1>Multiples de cinco de 5 al 100</h1>
+<h4>for</h4>
+<script>
+	for(let i =100;i>=5; i-=5){
+		document.write(i+'<br/>');
+	}
+</script>
+
+<hr>
+<h1>Multiples de cinco de 5 al 100</h1>
+<h4>while</h4>
+<script>
+	var i=100;
+	while(i>=5){
+		document.write(i+'<br/>');
+		i-=5;
+	}
+</script>
+<p>do-while</p>
+<script>
+	var i=100;
+	do{
+		document.write(i+',');
+		i-=5;
+
+	}while(i>5);
+</script>
+
+
+</body>
+</html>

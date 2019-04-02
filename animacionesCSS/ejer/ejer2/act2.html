@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad2</title>
+	<style >
+		div{
+			background: url(pai.jpeg);
+			width:200;
+			
+			height: 600px;
+			background-repeat: no-repeat;
+		}
+
+
+		#simba{
+			position: relative;
+			margin-left: -951%;
+			top: 10px;
+			transform: rotateY( 150deg);
+			animation: simba 2s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes simba{
+			from{top: 10px;}
+			to{top: 40px;}
+		}
+
+
+		#pajaro{
+			position: absolute;
+			top: 250px;
+			animation-name: pajaro;
+			animation-duration: 10s;
+			
+		}
+
+
+
+		@keyframes pajaro{
+			from{left: 1000px;}
+			to{left: 0px;}
+		}
+		#zira{
+			position: absolute;
+			left: 800px;
+			top: 430px;
+			transform: rotateY( 150deg);
+			animation-name: desplazar;
+			animation-duration: 30s;
+
+		}
+		@keyframes desplazar{
+			from{ left: 800px;}
+			to{ left: 1090px; }
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		<figure id="simba">
+			<img src="simba.png" width="99">
+		</figure>
+		<figure id="pajaro">
+			<img src="pajaro.png" width="80">
+		</figure>
+		<figure id="zira">
+			<img src="zii.png" width="60">
+		</figure>
+	</div>
+	
+		
+	</div>
+
+</body>
+</html>

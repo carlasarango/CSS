@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO2</title>
+	<script>
+		function area(){
+			var altura=document.getElementById('alt').value;
+			var base= document.getElementById('base').value;
+			var resul= (altura*base)/2;
+
+			document.getElementById('resultado').innerHTML=resul;
+
+		}
+
+	</script>
+	
+</head>
+<body>
+	<h1>CALCULA EL AREA</h1>
+		<label>ALTURA:</label><input id="alt" type="number" >
+		<label>BASE:</label><input id= "base" type="number" >
+
+		<button onclick="area();">AREA</button>
+
+		Resultado:<span id="resultado"></span>
+</body>
+</html>

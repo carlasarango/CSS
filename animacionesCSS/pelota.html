@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Diapo20</title>
+	<style>
+		div{
+			margin: 40px;
+			border: solid 2px;
+			width: 40vw;
+			height: 25vw;
+			position: relative;
+		}
+		
+			
+		#pelota{
+			height: 100px, width:100px;
+			position: absolute;
+			animation-name:botar,rotar;
+			animation-duration: 2s;
+			animation-timing-function: cubic-bezier(.67,.06,.94,.74),linear; 
+			animation-iteration-count: infinite;
+			animation-direction: alternate, normal;
+
+		}
+		
+		@keyframes botar{
+			from{ top: 0px;}
+			to{ top: 300px; }
+		}	
+
+
+		@keyframes rotar{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="campo">
+		<figure id="pelota">
+			<img src="pelota.png" width="90">
+		</figure>
+
+	</div>
+</body>
+</html>

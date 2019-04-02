@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EJERCICIO2</title>
+	<meta charset="utf-8">
+	<script >
+		function desenfoque(){
+			var desenfoque= document.getElementById('desenfoque').value;
+			document.getElementById('jack').style.filter='blur('+desenfoque+'px)';
+		}
+	</script>
+</head>
+<body>
+	<figure>
+		<img src="j.png" id="jack" alt="un pirata" title="el pirata"/>
+	</figure>
+	<label>Mueve el rango para desenfocar o enfocar</label>
+	<br/>
+	0<input type="range" id="desenfoque" min="0 max="20" step="1" onchange="desenfoque();">20
+	<hr>
+
+
+</body>
+</html>

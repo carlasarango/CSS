@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIBRO</title>
+	<meta charset="utf-8">
+	<style >
+		body{
+			margin: 290px;
+			background-color:#ffd480;
+
+		}
+		h1{
+			color: #b32400;
+			font-size: 90px;
+
+
+		}
+
+		img{border:solid 2px black;}
+
+		.libro{
+			position: relative;
+			width: 200px;
+			height: 280px;
+			transform-style: preserve-3d;
+			transform: rotateY(50deg) rotateX(30deg);
+			transition: 0.7s;
+		}
+
+		.libro img{
+			position: absolute;
+			height: 290px;
+			width: 210px;
+			transform-origin: 0% 50%;
+			transition: 6s;
+		}
+		.libro .portada{transform: rotateY(-10deg);}
+		.libro .contraportada{transform: rotateY(20deg);}
+		.libro .hoja:first-of-type{transform: rotateY(5deg);}
+    	.libro .hoja:nth-of-type(2){transform: rotateY(10deg);}
+    	.libro .hoja:nth-of-type(3){transform: rotateY(15deg);}
+
+
+    	.libro:hover {transform: rotateY(0deg) rotateX(25deg);}
+   		 .libro:hover .portada{transform: rotateY(-80deg);}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1>LAS ROSAS DE HERCULES</h1>
+<div class="libro">
+	<img class="portada" src="portada.jpg"/>
+	<img class="hoja" src="hoja.jpg"/>
+	<img class="hoja" src="hoja.jpg"/>
+	<img class="hoja" src="hoja.jpg"/>
+	<img class="contraportada" src="contraportada.jpg"/>
+</div>
+</body>
+</html>

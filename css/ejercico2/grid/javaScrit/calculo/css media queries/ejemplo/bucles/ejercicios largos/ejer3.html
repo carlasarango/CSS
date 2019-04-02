@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad3</title>
+	<script>
+		function calcular(){
+			var filas=parseInt(document.getElementById('fil').value);
+			var columnas=parseInt(document.getElementById('col').value);
+			var res='<table border="1">';
+
+			for(let i=1; i<=filas;i++){
+				res+='<tr>';
+				for(let j=1; j<=columnas;j++){
+					res+='<td>'+i+'-'+j+'</td>';
+				}
+				res+='</tr>';
+			}
+
+			res+='</table>';
+		
+		res.innerHTML=res;
+	}
+
+	</script>
+</head>
+<body>
+	<label>Filas:</label><input type="number" id="fil"/>
+	<label>Columnas:</label><input type="number" id="col">
+	<button onclick="calcular();">Calcular</button>
+
+</body>
+</html>

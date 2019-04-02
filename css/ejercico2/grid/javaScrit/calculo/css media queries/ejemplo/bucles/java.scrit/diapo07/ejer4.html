@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO4</title>
+	<script >
+		function calcular(n1,n2) {
+			
+			var hip= Math.sqrt(Math.pow(n1,2)+Math.pow(n2,2));
+
+			resultado.innerHTML=hip;
+		
+		}
+
+	</script>
+</head>
+<body>
+<h1>¿Cual es la hipotenusa?</h1>
+<h2>De un triangulo rectángulo</h2>
+<label>Cateto:</label><input type="number" id="cat1">
+<label>Cateto:</label><input type="number" id="cat2">
+<button onclick="calcular(cat1.value, cat2.value);">Calculo</button>
+<output id="resultado"></output>
+
+</body>
+</html>

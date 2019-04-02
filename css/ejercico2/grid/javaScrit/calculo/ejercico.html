@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio2</title>
+	<meta charset="utf-8"
+	<lang="es">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function sumar() {
+			var n1= parseFloat(p1.value);
+			var n2=parseFloat(p2.value);
+
+			var calculo= n1+n2;
+
+			resultado.innerHTML=calculo;
+		}
+
+		function restar() {
+			var n1= parseFloat(p1.value);
+			var n2=parseFloat(p2.value);
+
+			var calculo= n1-n2;
+
+			resultado.innerHTML=calculo;
+
+
+			// body...
+		}
+		function multiplicar() {
+			var n1= parseFloat(p1.value);
+			var n2=parseFloat(p2.value);
+
+			var calculo= n1*n2;
+
+			resultado.innerHTML=calculo;
+		}
+		function divir() {
+			var n1= parseFloat(p1.value);
+			var n2=parseFloat(p2.value);
+
+			var calculo= n1/n2;
+
+			resultado.innerHTML=calculo;
+
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+
+	<h1>PROBLEMA CON TIPOS DINÁMICOS</h1>
+	<label>Número 1</label>
+	<input id="p1" type="number" value="0">
+	<label>Número 2</label>
+	<input id="p2" type="number" value="0"><br>
+	<button onclick="sumar()">SUMAR</button>
+	<button onclick="restar()">RESTAR</button>
+	<button onclick="multiplicar()">MÚLTIPLICAR</button>
+	<button onclick="divir()">DIVIDIR</button>
+
+	<span id="resultado">0</span>
+
+
+
+
+
+
+
+
+</body>
+</html>

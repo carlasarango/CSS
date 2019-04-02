@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	border:solid 2px;
+}
+h1{
+	font-size: 3vw;
+}
+label{
+	font-size: 1.7vw;
+	
+	
+}
+input{
+	width: 5vw;
+	height: 1.5vw;
+}
+output{
+	font-size: 2vw;
+}
+button{
+	width: 5vw;
+	height: 1.5vw;
+}

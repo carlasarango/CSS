@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding: 1;
+}
+
+.grid-container{
+	grid-template-columns: 35% auto 35%;
+	display: grid;
+	grid-gap: 5px;
+}
+header,main,form,aside,footer{
+	text-align: center;
+	border:1px solid #000;
+	padding: 20px;
+}
+header{
+	grid-column: 1/2;
+	background-color:#ffff66 ;
+
+}
+form{
+	grid-column: 2/3;
+	background-color:#ff5050;
+
+}
+anside

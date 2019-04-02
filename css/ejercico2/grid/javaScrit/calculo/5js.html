@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO5</title>
+	<script>
+		function euros(){
+			var pesetas= parseFloat(document.getElementById('p').value);
+			var calculo= pesetas*0.06;
+			document.getElementById('resultado').innerHTML=calculo;
+		}
+
+		function pesetas(){
+			var euros=parseFloat(document.getElementById('p').value);
+			var calculo=euros*166.3
+			document.getElementById('resultado').innerHTML=calculo;
+
+		}
+	</script>
+</head>
+<body>
+	<h1>Conversor en Pesetas y Euro.</h1>
+	<input type="number" id="p">
+	<button onclick="euros()">euros a pesetas</button>
+	<button onclick="pesetas()">pesetas a euros</button>
+	<span id="resultado"></span>
+</body>
+</html>

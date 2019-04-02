@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>interfaz gráfica</title>
+	<meta charset="utf-8">
+	<script>
+		function calcular(){
+
+			var teoria= parseFloat(inteoria.value);
+			var practica= parseFloat(inpractica.value);
+			var nota=teoria*0.3+practica*0.7;
+
+			if (inextra.checked){
+				nota++;
+			}
+			if (nota>10){
+				nota=10;
+			}
+			outresultado.innerHTML=nota;
+		}
+	</script>
+
+
+</head>
+<body>
+	<h1>CARNET DE CONDUCIR</h1>
+
+	<label>TEORIA</label>
+	<input id="inteoria"type="number" min="1" max="10" ><br>
+
+	<label>PRACTICA</label>
+	<input id="inpractica"type="number" min="1" max="10">
+
+	<button onclick="calcular();">CALCULAR:</button><br>
+
+	<span id="resultado">Resultado final:</span>
+	<output id="outresultado">0</output>
+
+</body>
+</html>

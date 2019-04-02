@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PROGRAMA</title>
+	<script>
+		function calcular() {
+			var primera= (document.getElementById('uno').date);
+			var segunda=(document.getElementById('dos').date);
+			(primera-segunda)=resultado;
+			document.getElementById('resultado').innerHTML;
+
+		}
+
+	</script>
+</head>
+<body>
+	<h1> NUMERO DE MESES QUE AN PASADO</h1>
+	<label>ESCRIBE AQUI LA PRIMERA FECHA</label>
+	<input id="uno" type="date" min="2000" max="2019"><br>
+	<label>ESCRIBE AQUI LA SEGUNDA FECHA</label>
+	<input id="dos" type="date" min="2000" max="2019"><br>
+	<button onclick="calcular()"> CARLCULAR</button>
+	<output id="resultado"></output>
+
+
+</body>
+</html>

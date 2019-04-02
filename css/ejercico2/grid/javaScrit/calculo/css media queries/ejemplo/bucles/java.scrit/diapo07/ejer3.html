@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO3</title>
+	<script>
+		function calcular(din,des) {
+			var res=(din*des);
+			var precio=(din-res);
+			resultado.innerHTML=precio;
+		if(din<0){
+			resultado.innerHTML='NAN';
+		}
+
+		if(precio<=0 || precio>100){
+			resultado.innerHTML='NAN'
+		}
+
+	}
+				
+	</script>
+</head>
+<body>
+<h1>Crea una función descuento()</h1>
+<label>Introduce el precio final:</label><input type="number" id="dinero">
+<select id="descuento">
+	<option value="0.1">10%</option>
+	<option value="0.5">50%</option>
+	<option value="0.7">70%</option>
+</select><br>
+<button onclick="calcular(dinero.value, descuento.value);">CALCULAR</button>
+<output id="resultado"></output>
+</body>
+</html>

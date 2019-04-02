@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio1</title>
+</head>
+<body>
+	<h1>Pruebas los metodos en las tablas para trabajar con arrays</h1>
+	<h2>Reverse</h2>
+	<script >
+		
+		var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+		nombres.reverse();
+		document.write(nombres+'<br>');
+	</script>
+	<hr>
+	<h2>Sort</h2>
+		<script >
+		var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+		nombres.sort();
+		document.write(nombres+'<br>');
+		</script>
+		<hr>
+	<h2>Splice</h2>
+		<button onclick="sumar();">My función:</button>
+		<output id="demo"></output>
+		<script>
+		var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+		document.getElementById('demo').innerHTML=nombres;
+		function sumar() {
+			nombres.splice(2,0,'Juan','Marta');
+			document.getElementById("demo").innerHTML=nombres;
+		}
+		</script>
+		<hr>
+	<h2>toString</h2>
+		<button onclick="convertir();">Convertir</button>
+		<output id="demo2"></output>
+		<script>
+		function convertir() {
+			var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+			nombres.toString();
+			document.getElementById("demo2").innerHTML=nombres;
+		}
+		</script>
+		<hr>
+	<h2>unshift</h2>
+		<button onclick="añade();">AÑADE</button>
+		<output id="demo3"></output>
+		<script>
+			 var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+			document.getElementById('demo3').innerHTML=nombres;
+			function añade() {
+			nombres.unshift('Luis,Maria');
+			document.getElementById("demo3").innerHTML=nombres;
+		}
+		</script>
+		<hr>
+	<h2>valueOf</h2>
+		<button onclick="primitivo();">Primitivo</button>
+		<output id="demo4"></output>
+		<script >
+			function primitivo(){
+			var nombres= ['Pedro','Carla','Edu','Laura','Carlos'];
+			document.getElementById('demo4').innerHTML=nombres.valueOf();
+			}
+
+		</script>
+		<hr>
+	<h2>concat</h2>
+		<button onclick="concatenar();">Concatenar</button>
+		<output id="demo5"></output>
+		<script>
+			function concatenar(){
+				var nombre=['Pedro','Carla'];
+				var amigos=['Edu','Laura','Carlos'];
+				var niños=nombre.concat(amigos);
+				document.getElementById('demo5').innerHTML=niños;
+			}
+		</script>
+		<hr>
+
+		
+
+
+</body>
+</html>

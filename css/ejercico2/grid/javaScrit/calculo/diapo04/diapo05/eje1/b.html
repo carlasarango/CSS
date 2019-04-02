@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO2</title>
+	<script >
+		function calcular(){
+			var base=(document.getElementById('base').value);
+			var alt=(document.getElementById('altura').value);
+			
+			if(base>0 && alt>0){
+				var area=(base*alt);
+				var perimetro=2*(base+alt);
+				area1.innerHTML=area;
+				perimetro1.innerHTML=perimetro;
+			}else{
+				alert('datos incorrectos');
+			}
+	
+		}
+		
+
+	</script>
+</head>
+<body>
+	<h1>IMPLEMENTA EL PROGRAMA DEL DIAGRAMA DE FLUJO</h1>
+
+	<label>Base</label>
+	<input type="number" id="base" min="1">
+
+	<label>Altura</label>
+	<input type="number" id="altura" min="1"><br>
+
+	<button onclick="calcular();">CALCULAR</button><br>
+	<span>RESULTADO AREA:</span>
+	<output id="area1"></output><br>
+	<span>RESULTADO PERIMETRO:</span>
+	<output id="perimetro1"></output>
+</body>
+</html>

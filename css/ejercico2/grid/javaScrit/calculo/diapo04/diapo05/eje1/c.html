@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ACTIVIDAD2</title>
+	<script>
+		function Calcular(){
+			var PI = 3.1416;
+			var radio=(document.getElementById('radio').value);
+			var area = (document.getElementById('cbox1').checked);
+			var perimetro=(document.getElementById('cbox2').checked);
+			var diametro=(document.getElementById('cbox3').checked);
+
+			
+			if (area){
+				var calculo= 2*(PI*r);
+				
+				
+			}
+			if (perimetro){
+				var calculo=PI*(r*r);
+			}
+		
+				
+			if (diametro){
+				var calculo=2*r;
+			}
+
+			resultado.innerHTML=calculo;
+		}
+	</script>
+</head>
+<body>
+	<h1>1.CREA UNA WEB QUE CALCULE EL PERÍMETRO, EL ÁREA Y EL DIÁMETRO DE UNA CIRCUNFERENCIA.</h1>
+	<label>Radio:</label><br>
+	<input id="radio" type="number" ><br>
+	<label><input type="checkbox" id="cbox1"  value="firstcheckbox">AREA</label><br>
+	<label><input type="checkbox" id="cbox2" value="secondcheckbox">PERIMETRO</label><br>	
+	<label><input type="checkbox" id="cbox3" value="thirdcheckbox">DIAMETRO</label><br>
+	<button onclick="Calcular();">CALCULAR</button>
+	<output id="resultado">0</output>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO6</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+
+		function pensando(){
+			var n1=parseFloat(document.getElementById('primero').value);
+			var n2=parseFloat(document.getElementById('segundo').value);
+			var n3=parseFloat(document.getElementById('tercero').value);
+
+
+			if (n1>=n2 && n1>=n3) {
+				alert(n1);
+
+			}
+			if( n2>=n1 && n2>=n3){
+				alert(n2);
+			}
+
+			if (n3>n1 &&n3>n2){
+				alert(n3);
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<h1>Crea un programa que pida tres números y nos imprima por pantalla cuál es el mayor  de los tres.</h1>
+	<label>Escribe aqui el primer número:</label>
+	<input type="number" id="primero"><br>
+	<label>Escribe aqui el segundo número:</label>
+	<input type="number" id="segundo"><br>
+	<label>Escribe aqui el ultimo número:</label>
+	<input type="number" id="tercero"><br>
+	<span>¿Cúal es el mayor de los tres números?</span>
+	<button onclick="pensando();">PENSANDO...</button>
+		<img src="imagen.jpeg" >
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO3</title>
+	<style>
+		div{
+			width: 60vw;
+			border: solid 2px;
+		}
+	</style>
+
+	<script >
+		function pintar(colorea){	
+			document.getElementById('foto').style.backgroundColor=colorea;
+		}
+	</script>
+</head>
+<body>
+
+<h1>Crea una funcion colorear</h1>
+<label>color</label><input type="color" id="color" />
+<br/>
+<div id="foto">
+	<img src="cara2.png" width="400vw">
+</div>
+<button onclick="pintar(color.value);">PINTAR FONDO</button>
+</body>
+</html>

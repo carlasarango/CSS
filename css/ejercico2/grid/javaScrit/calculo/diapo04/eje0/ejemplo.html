@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ejemplo</title>
+	<script >
+		function calcular(){
+			var notas= parseIn(innota.value);
+			var notaTexto=resultado;
+			switch (nota){
+				case 0:
+				case 1:
+				case 2:notaTexto="deficiente"; break;
+				case 3:
+				case 4:notaTexto="suspenso"; break;
+				case 5:
+				case 6:notaTexto="Aprobado"; break;
+				case 7:
+				case 8:notaTexto="Notable"; break;
+				case 9:
+				case 10:notaTexto="Excelente"; break;
+				default:notaTexto="Error en la nota"
+				}
+				outnota.innerHTML=notaTexto;
+		}
+	</script>
+</head>
+<body>
+	<h1>FINAL DE CURSO</h1>
+	<label>Nota media del año</label>
+	<input id ="innota"type="number" min="1" max="10">
+	<input id ="innota"type="number" min="1" max="10">
+	<button onclick="calcular();">Calcular</button><br>
+	<span id="resultado">Tú nota es:</span>
+
+
+</body>
+</html>

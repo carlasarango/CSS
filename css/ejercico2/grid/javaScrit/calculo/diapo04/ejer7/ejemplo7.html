@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO7</title>
+	<script >
+		function calcular(){
+			var preguntas=document.getElementById('preguntas').value;
+			var errores=document.getElementById('descuentos').value;
+			var aciertos=document.getElementById('aciertos').value;
+			var nota=document.getElementById('nota').value;
+			var contestadas=document.getElementById('contestadas').value;
+			var notafinal=document.getElementById('fin').value;
+
+			if (contestadas){
+				aciertos+errores-preguntas;
+
+			}
+			if (true) {
+
+			}
+}
+	</script>
+</head>
+<body>
+		<h1>Entrada de datos</h1>
+		<h2>Parámetros</h2>
+		<label>PREGUNTAS:</label>
+		<input type="number" id="preguntas" min="1"><br>
+		<label>DESCUENTO POR ERROR:</label>
+		<select id="descuentos">
+			<option value="0">0%</option>
+			<option value="0.25">25%</option>
+			<option value="0.33">33%</option>
+			<option value="0.50">50%</option>
+			<option value="0.66">66%</option>
+			<option value="0.75">75%</option>
+			<option value="1">100%</option>
+		</select><br>
+		<span>Resultados:</span><br>
+		<label>ACIERTOS:</label>
+		<input type="numer" id="aciertos"><br>
+		<label>ERRORES:</label>
+		<input type="number" id="errores"><br>
+		<button onclick="calcular();">Calcular</button><br>
+		<label>NOTA CONTESTADAS:</label>
+		<input type="number" id="nc">
+		<label>NOTA SIN DESCONTAR:</label>
+		<input type="number" id="nsd"><br>
+		<label>NOTA CONTESTAS:</label>
+		<input type="number" id="ncd"><br>
+		<label>FINAL SOBRE 10:</label>
+		<input type="number" id="fin" max="10">
+	
+
+		
+
+</body>
+</html>

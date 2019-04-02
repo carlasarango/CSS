@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PAGINA PRINCIPAL</title>
+	<style >
+
+		.grid-container{
+			grid-template-columns: auto 30%;
+			display: grid;
+			grid-gap: 5px;
+			width: 90%;
+			margin: auto;
+		}
+		header{
+			grid-template-columns: auto auto;
+			height: 8vw;
+			padding: 20px;
+			background-color: ##8f888f;
+			display: grid;
+
+		}
+		form{
+			display: grid;
+			grid-template-columns: 50% auto;
+			background-color:#b2d234;
+			height: 8vw;
+			padding: 20px;	
+			
+		}
+	
+		footer{
+			border:solid 2px;
+			padding: 20px;
+		}
+		nav{
+			grid-template-columns: auto;
+		}
+
+
+		.menu a{
+			font-size: 2vw;
+			color: black;
+			padding: 39px;
+			text-decoration: none;
+		}
+		 .menu:hover{
+			background-color: #ffff99;
+		}
+
+		#header{
+			margin: auto;
+			width: 500px;
+			
+		}
+		.aside{
+			width: 500px;
+			margin: auto;
+		}
+		.aside> li{
+			float: left;
+		}
+		.aside li a {
+				color: #000;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+		}
+		.aside li: hover >ul{
+			display: block;
+		}
+
+
+		:root{
+			background-image: url('fondo.jpg.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
+		}
+
+
+
+
+
+
+
+
+		main{
+			grid-column: 1/3;
+			background-image: linear-gradient(to left top, #19081f, #3f2c48, #6c5076, #9c77a7, #d0a1da);)
+		}
+	</style>
+</head>
+<body class="grid-container">
+	<header>
+		
+			<figure  id="logo">
+				<img src="logo.png" width="120">
+			</figure>
+			<figure id="principal">
+				<img src="animales.png" width="540">
+			</figure>
+	
+	</header>
+	<form>
+		<div class="container">
+			<img src="lupa.png" width="30">
+			<input type="text" id="buscar"  placeholder="Más de 20.000 productos!">
+		</div>
+		
+		<fieldset>
+			<img src="descuentos.png" width="95"><br>
+			<label for="uname">NOMBRE</label>
+			<input type="text" placeholder="Enter Username"><br>
+			<label for="pass">CONTRASEÑA</label>
+			<input type="text" placeholder="Password"><br>
+			<input type="submit" id="ENVIAR">
+		</fieldset>
+
+
+	</form>
+	
+	<nav>
+		<div class="menu">
+			<a href="#" class="active">Perros</a>
+			<a href="#" class="active">Gatos</a>
+			<a href="#" class="active">Peces</a>
+			<a href="#" class="active">Roedores</a>
+			<a href="#" class="active">Oferta del mes</a>
+
+	</nav>
+	<aside>
+		<div id="header">
+			<li class="nivel1"><a href="#" class="nivel1">¿Quienes somos?</a>
+			<ul class="aside">
+				<li><a href=>¿QUIENES SOMOS?</a></li>
+			</ul>
+				<li><a href="">Nuestras tiendas</a></li>
+				<li><a href="">Blog MascoTerra</a></li>
+				<li><a href="">Contactanos</a></li>
+			</ul>
+
+
+		</div>
+	</aside>
+	<!--  <main>
+		<div class="octagono">
+			<
+			
+		</div>
+	</main> 
+	<!-- <footer> -->
+		
+	</footer> 
+
+</body>
+</html>

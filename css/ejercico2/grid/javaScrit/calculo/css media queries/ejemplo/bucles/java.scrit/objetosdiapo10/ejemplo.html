@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+	
+</head>
+<body>
+
+<script>
+	function imprimir() {
+		var texto= document.getElementById('texto').value;
+		for( var i=0; i<texto.length; i++) {
+		document.write(texto[i]+'<br/>');
+
+		}
+
+	}
+	
+</script>
+	<label>Escribe tu texto:</label>
+	<input type="text" id="texto"/><br>
+	<button onclick="imprimir();">Realizar accion</button>
+
+
+
+</body>
+</html>

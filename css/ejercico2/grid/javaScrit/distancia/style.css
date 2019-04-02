@@ -1,0 +1,15 @@
+*{
+	margin: 4px;
+	padding:2px;
+
+}
+h1{
+	border:solid 4px;
+	width: 20vw;
+	border-color:#ff3300;
+	background-color: #ff9999;
+}
+
+img{
+	width: 15vw;
+}

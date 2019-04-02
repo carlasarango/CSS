@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO2B</title>
+	<script>
+		function calcular(base,altura){
+			var area=(base*altura);
+			resultado.innerHTML=area;
+			
+		}
+
+
+
+	</script>
+</head>
+<body>
+<h1>Área de un rectángulo a partir de la base y la altura</h1>
+<label>Introduce la base:</label><input type="number" id="ba">
+<label>Introduce la altura:</label><input type="number" id="alt">
+<button onclick="calcular(ba.value, alt.value);">AREA</button>
+<output id="resultado"></output>
+</body>
+</html>

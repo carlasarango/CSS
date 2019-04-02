@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO4</title>
+	<script>
+		function millas(){
+			var k=document.getElementById('kl').value;
+			var operacion=k/1.609;
+			document.getElementById('resultado').innerHTML=operacion.toFixed(2);
+
+		}		
+
+	</script>
+</head>
+<body>
+	<h1>ESCRIBE UN PROGRAMA QUE CONVIERTA DE KILÓMETROS A MILLAS</h1>
+
+	<label>KILÓMETROS:</label><input type="number" id="kl">
+	<button onclick="millas()">millas</button>
+	<span>resultado:</span><span id="resultado"></span>
+
+</body>
+</html>

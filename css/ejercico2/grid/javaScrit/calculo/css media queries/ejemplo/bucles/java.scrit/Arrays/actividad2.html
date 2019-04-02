@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad2</title>
+</head>
+<body>
+	<h2>MÚLTIPLES DE 7</h2>
+	<button onclick="multiplos();">CLICA</button>
+	<span id="resultado"></span>
+	<script >
+		
+			
+			function multiplos () {
+			
+				var multiples= new Array(1000);
+				for (let i =0; i<=1000;i++){
+					multiples[i]=(i+1)*7;
+				}
+			document.getElementById('resultado').innerHTML=multiples;
+			
+				
+		}
+
+
+	</script>
+
+</body>
+</html>

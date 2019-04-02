@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CUBO EN 3D</title>
+	<style>
+		.cubo{
+			position: relative;
+			transform-style: preserve-3d;
+			height: 200px;
+			width: 200px;
+			transform: rotateX(45deg) rotateY(50deg);
+			margin: 7vw;
+
+		}
+		.cubo:hover{
+			transition: 10s;
+			transform: rotateX(300deg) rotateY(350deg);
+			
+		}
+		.cara{
+			position: absolute;
+			border: solid 1px black;
+			height: 200px;
+			width: 200px;
+			text-align: center;
+		}
+		.front{
+			background: url(ney.jpeg);
+			transform: translateZ(100px);
+		}
+		.back{
+			background:url(mexi.jpeg);
+			transform: rotate(180deg) translateZ(100px);
+
+		}
+		.left{
+			background:url(maldiv.jpeg);
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.right{
+			background:url(jaa.jpeg);
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+		.top{
+			background:url(aleman.jpeg);
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.bottom{
+			background:url(taillan.jpeg);
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		body{
+			background-color:#58b3b3;
+		}
+	</style>
+</head>
+<body>
+<h1>Cubo en 3D</h1>
+<div class="cubo">
+	<div class="cara front"></div>
+	<div class="cara back"></div>
+	<div class="cara left"></div>
+	<div class="cara right"></div>
+	<div class="cara top"></div>
+	<div class="cara bottom"></div>
+</div>
+</body>
+</html>

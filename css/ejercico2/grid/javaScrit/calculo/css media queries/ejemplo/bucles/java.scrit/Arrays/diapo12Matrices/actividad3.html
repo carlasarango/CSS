@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Acitividad3</title>
+	<script type="text/javascript">
+		var numero=[];
+		var matriz=[[n1,n2,n3,n4,n5]];
+		function imprimir(matriz) {
+
+
+			for (let i = 0; i < matriz.length; i++) {
+				for(let i =0; numero<matriz[i].length;numero++)
+					document.write('<br>');
+			}
+		}
+			
+		imprimir(matriz);
+			
+		
+
+
+	</script>
+</head>
+<body>
+	<label>Valor 1: </label>
+	<input type="number" id="n1" />
+	<label>Valor 2: </label>
+	<input type="number" id="n2" />
+	<label>Valor 3: </label>
+	<input type="number" id="n3" />
+	<label>Valor 4: </label>
+	<input type="number" id="n4" />
+	<label>Valor 5: </label>
+	<input type="number" id="n5" />
+	<button onclick="imprimir(n1.value, n2.value, n3.value, n4.value, n5.value);">INDICE</button><br>
+	<span id="resultado"></span>
+	<hr>
+	<!-- <button onclick="ultimoindice(n1.value, n2.value, n3.value, n4.value, n5.value);">ULTIMO</button>
+	<span id="res2"></span>
+ -->
+</body>
+</html>

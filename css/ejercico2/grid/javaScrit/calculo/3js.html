@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio3</title>
+	<script>
+		function gradosf(){
+			var c= document.getElementById('gradosC').value;
+			var operacion= (c*9/5)+32;
+			document.getElementById('resultado').innerHTML=operacion;	
+
+		}
+		function gradosc(){
+			var f= document.getElementById('gradosF').value;
+			var operacion=(f-32)*5/9;
+			document.getElementById('resultado').innerHTML=operacion;
+		}
+	</script>
+</head>
+<body>
+	<h1>DE GRADOS FAHRENHEIT A GRADOS CELSIUS.</h1>
+	<label>grados FR</label><input id="gradosF" type="number">
+	<label>grados Cº</label><input id="gradosC" type="number"><br>
+	<button onclick="gradosc()"> grados Celsius</button>
+	<button onclick="gradosf()"> grados Fahrenhei</button><br>
+	resultado:<span id="resultado"></span>
+
+</body>
+</html>

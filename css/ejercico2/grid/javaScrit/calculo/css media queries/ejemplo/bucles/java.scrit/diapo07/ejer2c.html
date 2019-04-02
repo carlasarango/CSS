@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EJERCICIO2C</title>
+	<meta charset="utf-8">
+	<script>
+		function area(radio){
+
+			var oper=(Math.PI*radio);
+
+			resultado.innerHTML=oper;
+
+		}
+
+	</script>
+</head>
+<body>
+<h1>Área de un círculo, a apartir del radio</h1>
+<label>Introduzca el radio</label><input type="number" id="radio">
+<button onclick="area(radio.value);">area</button>
+<output id="resultado"></output>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+	margin: 0
+	padding:1px;
+}
+body{
+	border: solid #0000FF 2px;
+
+}
+header{
+	margin: 2vw;
+	border:solid #000000 1px;
+}
+main{
+	margin: 3vw;
+	

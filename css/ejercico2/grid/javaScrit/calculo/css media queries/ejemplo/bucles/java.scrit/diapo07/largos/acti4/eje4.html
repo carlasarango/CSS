@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad4</title>
+	<meta charset="utf-8">
+	<style>
+		figure:first-of-type img{
+			display: inline-block;
+			border: solid 5px;
+			
+		}
+	</style>
+	<script>
+		function colorea(color) {
+
+			document.getElementById('primera').style.backgroundColor=color;
+
+			
+		}
+		function zoom(foto2){
+			foto2.width*=1.5;
+		}
+		function reduc(foto2){
+			foto2.width*=0.5;
+		}
+		function mas(foto3){
+			foto3.width*=2;
+		}
+		function menos(foto3){
+			foto3.width*=0.4
+		}
+
+	</script>
+</head>
+<body>
+<h1>Crea una galeria de imágenes</h1>
+<figure id="primera">
+	<img src="img.jpeg" width="265">
+</figure>
+<figureid ="segunda">
+	<img src="img2.jpeg" width="350" onmouseenter="zoom(this);" onmouseleave="reduc(this);">
+</figure>
+<figure id="tercera">
+	<img src="img3.jpeg" width="350" onmouseenter="mas(this);" onmouseleave="menos(this);">
+</figure>
+<input type="color" id="color" />
+<button onclick="colorea(color.value)">COLEREA</button>
+</body>
+</html>

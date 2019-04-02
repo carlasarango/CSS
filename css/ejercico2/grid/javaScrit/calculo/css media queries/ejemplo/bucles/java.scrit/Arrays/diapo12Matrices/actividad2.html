@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ACTIVIDAD2</title>
+	<script type="text/javascript">
+		var valores = [];
+
+		function recoger(n1,n2,n3,n4,n5){
+			valores.push(n1,n2,n3,n4,n5);
+			document.getElementById('recogida').innerHTML = valores;
+		}
+
+		function recoger2(n){
+			valores.push(n);
+			document.getElementById('recogida').innerHTML = valores;
+			document.getElementById('numero').value='';
+		}
+
+		function positivo(){
+			var positivo = 0;
+			for(let i=0; i<valores.length;i++){
+				if(valores[i]>0){
+					positivo++;
+				}
+				document.getElementById('resultado').innerHTML = positivo;
+			}
+		}
+
+		function positivo2(){
+			var positivo = 0;
+			for(i in valores){
+				if(valores[i]>0){
+					positivo++;
+				}
+				document.getElementById('resultado').innerHTML = positivo;
+			}
+		}
+
+		function positivo3(){
+			var positivo = 0;
+			for(i of valores){
+				if(i>0){
+					positivo++;
+				}
+				document.getElementById('resultado').innerHTML = positivo;
+			}
+		}
+
+		function negativo(){
+			var negativo = 0;
+			for(let i=0; i<valores.length;i++){
+				if(valores[i]<0){
+					negativo++;
+				}
+				document.getElementById('resultado').innerHTML = negativo;
+			}
+		}
+
+		function par(){
+			var pares = 0;
+			for(let i=0; i<valores.length;i++){
+				if(valores[i]%2 == 0){
+					pares++;
+				}
+				document.getElementById('resultado').innerHTML = pares;
+			}
+		}
+
+		function impar(){
+			var impares = 0;
+			for(let i=0; i<valores.length;i++){
+				if(valores[i]%2 != 0){
+					impares++;
+				}
+				document.getElementById('resultado').innerHTML = impares;
+			}
+		}
+	</script>
+<body>
+	<label>Valor 1: </label>
+	<input type="number" id="n1" />
+	<label>Valor 2: </label>
+	<input type="number" id="n2" />
+	<label>Valor 3: </label>
+	<input type="number" id="n3" />
+	<label>Valor 4: </label>
+	<input type="number" id="n4" />
+	<label>Valor 5: </label>
+	<input type="number" id="n5" />
+	<br />
+	<button onclick="recoger(parseInt(n1.value), parseInt(n2.value), parseInt(n3.value), parseInt(n4.value), parseInt(n5.value));">Recoger Datos</button>
+	<button onclick="valores.pop();recogida.innerHTML=valores;">BORRAR ÚLTIMO</button>
+	<br />
+	<hr>
+	<label>Número a agregar: </label><input type="number" id="numero" />
+	<button onclick="recoger2(parseInt(numero.value));">RECOGER NÚMERO</button>
+	<h3 id="recogida"></h3>
+	<hr>
+	<h2>OPERAR</h2>
+	<button onclick="positivo();">POSITIVOS con FOR</button>
+	<button onclick="positivo2();">POSITIVOS con FOR IN</button>
+	<button onclick="positivo3();">POSITIVOS con FOR OF</button>
+	<button onclick="negativo();">NEGATIVOS</button>
+	<button onclick="par();">PARES</button>
+	<button onclick="impar();">IMPARES</button>
+	<h3 id="resultado"></h3>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO10</title>
+	<link rel="stylesheet" type="text/css" href="stylo.css">
+	<script>
+		
+		var aleatorio=Math.floor(Math.random()*128)+1;
+		var contador=0;
+
+		function ok(){
+			var resultado=document.getElementById('n').value;
+
+			if (resultado==aleatorio){
+			document.getElementById('resultado').innerHTML="Acertaste";
+			} else {
+				alert("has fallado tio");
+
+				if (aleatorio>resultado) {
+					document.getElementById('intentos').innerHTML="Es mayor";
+					++contador;
+
+				}else{
+					document.getElementById('intentos').innerHTML="Es mas pequeño";
+					++contador;
+				}	
+			}
+			document.getElementById('fallos').innerHTML=('llevas'+contador+'intentos');
+		}
+		function resetear(){
+
+		var aleatorio=(Math.floor(Math.random()*128)+1);
+		var contador=0;
+		document.getElementById('n').value="";
+
+		}
+	</script>
+</head>
+<body>
+	<h1>Adivina el número</h1>
+	<label>Número:</label>
+	<input type="number" id="n" min="1" max="128">
+	<button onclick="ok();">OK</button>
+	<button onclick="resetear();">Reiniciar</button><br>
+	<output id="resultado">Resultado:</output><br>
+	<output id="intentos"></output><br>
+	<output id="fallos">Veces que lo as intentato:</output>
+	
+</body>
+</html>

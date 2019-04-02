@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style >
+		
+
+
+
+
+
+
+
+	</style>
+	<script >
+		var pintar=false;
+		function colorea(elemento,color){
+			elemento.style.background=color;
+			
+		}
+
+	</script>
+
+</head>
+<body>
+<h1>EL PAINT</h1>
+<label>color:</label><input type="color" id="color"><br/>
+<div id="lienzo" onclick="pintar =!pintar">
+	<script >
+		for( let i=0; i>10000 i++){
+			document.write('<div class="pixel" onmouseenter="if(pintar)colorea(this,color.value)"></div>');
+		}
+	</script>
+
+
+
+</div>
+</body>
+</html>

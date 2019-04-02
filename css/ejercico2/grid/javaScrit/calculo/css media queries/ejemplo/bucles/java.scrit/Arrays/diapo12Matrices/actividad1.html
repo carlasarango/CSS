@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad1</title>
+	<script type="text/javascript">
+		
+		var total;
+
+		function recoger(primero, segundo, tercero, cuarto, quinto) {
+			total=[primero,segundo,tercero,cuarto,quinto];
+			document.getElementById('es').innerHTML=total;
+
+		}
+		
+		function suma(){
+			var sum=0;
+			for (let i = 0; i < total.length; i++) {
+				sum+=parseInt(total[i]);
+
+				document.getElementById('demo').innerHTML=sum;
+			}
+		
+		}
+		 function maximo(){
+			
+			document.getElementById('demo1').innerHTML=Math.max.apply(null,total);
+		}
+		function promedio(){
+			var sum=0;
+			
+			for (let i = 0; i < total.length; i++) {
+				sum+=parseInt(total[i]);
+			}
+			var prom=sum/3;
+			document.getElementById('demo2').innerHTML=prom;
+		}
+
+		function escalar(flo){
+			var esc =prompt('indique el valor a escalar');
+
+		   		for ( let i = 0; i < total.length; i++) {
+				 total[i]=total[i]*esc;
+				
+			}
+			 document.getElementById('demo3').innerHTML=total;
+		}
+
+		function escalar2(){
+			var esc= prompt('Indique el valor a escalar');
+			var copia= [];
+			for (let i = 0; i < total.length; i++) {
+					copia[i]=valores[i]*esc;
+			}		
+		
+			document.getElementById('demo4').innerHTML=copia;
+
+		}
+
+
+
+	</script>
+</head>
+
+<body>
+<h1>Crea las siguientes funciones</h1>
+<label>Numero1:</label><input type="number" id="uno">
+<label>Numero2:</label><input type="number" id="dos">
+<label>Numero3:</label><input type="number" id="tres">
+<label>Numero4:</label><input type="number" id="cuatro">
+<label>Numero5:</label><input type="number" id="cinco">
+<button onclick="recoger(uno.value, dos.value, tres.value, cuatro.value, cinco.value);">RECOGER NUMEROS</button><br>
+los numeros recogidos son:<span id="es"></span><br>
+
+
+<button onclick="suma();">SUMAR</button>
+<span id="demo"></span>
+<hr>
+
+<button onclick="maximo();">MAXIMO</button>
+<span id="demo1"></span>
+<hr>
+
+<button onclick="promedio();">PROMEDIO</button>
+<span id="demo2"></span>
+<hr>
+<label>FLOAT</label>
+<input type="number" id="fl"><br>
+<button onclick="escalar(fl.value);">ESCALAR1</button>
+<span id="demo3"></span>
+<hr>
+<button onclick="escalar2();">ESCALAR2</button>
+<span id="demo4"></span>
+<hr>
+</body>
+</html>

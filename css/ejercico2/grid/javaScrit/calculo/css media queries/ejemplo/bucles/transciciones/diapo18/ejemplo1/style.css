@@ -1,0 +1,27 @@
+#libro{
+	position: absolute;
+	top: 20%; height: 400px;
+	left: 0%; width: 300px;
+	transform-style: preserve-3d;
+	transform: rotateX(30deg) rotateY(-50deg); 
+}
+#libro:hover{
+	transition: 10s;
+	transform: rotateX(75deg) rotateY(120deg);
+}
+#libro img{
+	position: absolute;
+	border: solid 1px black;
+	height: 100%; width: 100%;
+	transform-origin: 0% 50%;
+}
+#libro .portada{transform: rotateY(0deg);}
+#libro .hoja:nth-of-type(2){transform: rotateY(5deg);}
+#libro .hoja:nth-of-type(3){transform: rotateY(10deg);}
+#libro .hoja:nth-of-type(4){transform: rotateY(15deg);}
+#libro .hoja:nth-of-type(5){transform: rotateY(20deg);}
+#libro .contraportada{transform: rotateY(25deg);}
+
+
+
+

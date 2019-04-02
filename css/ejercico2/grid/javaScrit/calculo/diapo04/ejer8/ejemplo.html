@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO8</title>
+	<script>
+		function calcular() {
+			var pri= parseFloat(document.getElementById('p').value);
+			var sec=parseFloat(document.getElementById('s').value);
+			var ter=parseFloat(document.getElementById('t').value);
+
+			if(pri+sec>terc && pri+ter>sec && sec+ter>pri){
+				if (pri==sec&& pri==ter) {
+				document.getElementById('r').innerHTML="EQUILATERO";
+
+				}else if (pri==sec|| sec==ter|| pri==ter){
+					document.getElementById('r').innerHTML="ISOSELES";
+				}else{
+					document.getElementById('r').innerHTML="ESCALENO";
+				}
+
+			}else{
+				alert('NO ES UN TRIANGULO');
+			}
+
+
+			
+		}
+
+				
+		
+	</script>
+</head>
+<body>
+	<h1>ESCRIBE UN PROGRAMA QUE RECIBA EL TAMAÑO DE LOS  TRES LADOS DE UN TRIÁNGULO Y NOS INDIQUE DE QUE TIPO ES.</h1>
+	<label>Primer tamaño:</label>
+	<input type="number" id="p">
+	<label>Segundo tamaño:</label>
+	<input type="number" id="s">
+	<label>Tercer tamaño:</label>
+	<input type="number" id="t"><br>
+	<button onclick="calcular();">CALCULAR</button>
+	<output id='r'>ES</output>
+
+</body>
+</html>

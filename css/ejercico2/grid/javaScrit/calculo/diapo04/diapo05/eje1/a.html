@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EJERCICIO1</title>
+	<script>
+		function calcular(){
+			var uno= (document.getElementById('primer').value);
+			var dos= (document.getElementById('segundo').value);
+			var tres= (document.getElementById('tercer').value);
+			var nota=(uno+dos+tres)/3;
+
+			if(nota<5){
+				outcalificacion.innerHTML='suspenso';
+
+			} else if(nota>=5){
+				outcalificacion.innerHTML='aprobado';
+			}
+
+		}
+		
+	</script>
+</head>
+<body>
+	<h1>NOTA FINAL UNIVERSITARIA.</h1>
+	<label>Primer año:</label>
+	<input type="number" id="primer" min="1" max="10">
+	<label>Segundo año:</label>
+	<input type="number" id="segundo" min="1" max="10">
+	<label>tercer año:</label>
+	<input type="number" id="tercer" min="1" max="10">
+	<button onclick="calcular();">CALCULAR</button>
+	<output id="outcalificacion"></output>
+
+
+
+</body>
+</html>
